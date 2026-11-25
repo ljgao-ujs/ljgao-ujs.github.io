@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="高利剑，江苏大学讲师。研究方向包括智能音频信号处理、声音事件检测、声音分离与多模态表征。">
+  <meta name="theme-color" content="#214e42">
+  <title>高利剑 · Lijian Gao | 江苏大学</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="demos.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="interactions.js" defer></script>
+  <script src="demos.js" defer></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="高利剑主页"><span class="brand-mark">G<span>.</span></span><span>LIJIAN GAO <small>ACADEMIC HOME</small></span></a>
+    <nav aria-label="主导航" id="navigation"><a href="#about">关于</a><a href="#research">研究</a><a href="#demos">演示</a><a href="#publications">论文</a><a href="#experience">经历</a><a class="nav-contact" href="#contact">联系我</a></nav>
+    <div class="header-actions"><button class="theme-toggle icon-button" aria-label="切换深色模式" title="切换主题"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg></button><button class="menu-toggle icon-button" aria-label="展开导航" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button></div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">JIANGSU UNIVERSITY · 江苏大学</p>
+        <h1>高利剑<span>Lijian Gao<span class="name-period">.</span></span></h1>
+        <p class="hero-role">讲师 · 计算机科学与通信工程学院</p>
+        <p class="hero-statement">让机器听懂声音，<br>理解真实世界。</p>
+        <p class="hero-description">专注于智能音频信号处理、声音事件检测与声音分离，探索复杂声学场景下的声音理解方法。</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#publications">浏览研究成果</a><a class="button button-outline" href="mailto:ljgao@ujs.edu.cn"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>邮件联系</a></div>
+        <div class="hero-topics"><span>Sound Event Detection</span><span>Sound Separation</span><span>Multimodal Learning</span></div>
+      </div>
+      <div class="sound-art" role="img" aria-label="声音感知概念插画：声波经过时频表征，转化为可识别的声音事件。仅为示意。">
+        <div class="art-topline"><span>THE WORLD, THROUGH SOUND</span><span class="art-symbol">◎</span></div>
+        <div class="art-orbits"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div></div>
+        <div class="waveform" id="waveform" aria-hidden="true"></div>
+        <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
+        <div class="sound-caption"><span class="caption-line"></span><span>从声学表征到事件理解<small>LISTEN. REPRESENT. UNDERSTAND.</small></span></div>
+        <div class="art-bottomline"><span>ACOUSTIC INTELLIGENCE</span><span>声音感知 · 概念示意</span></div>
+      </div>
+    </section>
+    <section id="about" class="about-section section-shell section-divider">
+      <div class="section-label"><span class="eyebrow">ABOUT</span><h2>关于我</h2></div>
+      <div class="about-content"><p class="large-copy">我关注一个问题：如何让机器在复杂的真实环境中，<em>辨别、分离并理解不同的声音？</em></p><p>我目前是江苏大学计算机科学与通信工程学院讲师，2024 年于江苏大学获得计算机科学与技术博士学位。研究围绕智能音频信号处理、声音事件检测与声音分离展开，关注弱监督与半监督学习、声学表征及多模态语义建模。</p><p>目前主持国家自然科学基金青年项目、江苏省自然科学基金青年项目及镇江市科技计划项目，围绕复杂场景下的声音感知与理解开展研究。</p><div class="about-links"><a href="https://www.ujs.edu.cn/" target="_blank" rel="noopener noreferrer">江苏大学</a><span>/</span><a href="https://github.com/ljgao-ujs" target="_blank" rel="noopener noreferrer">GitHub</a><span>/</span><a href="mailto:ljgao@ujs.edu.cn">ljgao@ujs.edu.cn</a></div></div>
+    </section>
+    <section id="research" class="research-section section-shell section-divider">
+      <div class="section-heading"><div><p class="eyebrow">RESEARCH INTERESTS</p><h2>研究方向</h2></div><p class="section-intro">辨别声音事件，分离混合声源，<br>理解声音背后的语义。</p></div>
+      <div class="research-grid">
+        <article class="research-card"><div class="research-visual visual-wave" aria-hidden="true"><svg viewBox="0 0 240 90"><path d="M0 45H20L25 35 30 55 35 15 40 75 45 25 50 65 55 40 60 50 65 45H85L90 30 95 60 100 5 105 85 110 20 115 70 120 35 125 55 130 45H150L155 38 160 52 165 24 170 66 175 34 180 56 185 45H240"/></svg></div><p class="card-kicker">AUDIO PERCEPTION</p><h3>声音事件检测</h3><p>研究弱监督与半监督条件下的声音识别及时间定位，在有限标注下学习可靠的声学表征。</p><div class="tags"><span>Weak supervision</span><span>Temporal modeling</span></div></article>
+        <article class="research-card"><div class="research-visual visual-nodes" aria-hidden="true"><svg viewBox="0 0 240 90"><path d="M15 45h10l5-18 6 36 6-28 6 22 6-12h15m0 0h30m0 0 25-23h18m-43 23 25 23h18m0-46h8l5-12 5 24 5-16 5 8h35m-63 42h9l5-8 5 16 5-12 5 6h34"/></svg></div><p class="card-kicker">SOUND SEPARATION</p><h3>声音分离</h3><p>从多声源混合信号中提取目标声音，探索声源表征、目标条件建模与复杂场景中的声音解耦。</p><div class="tags"><span>Source separation</span><span>Target sound extraction</span></div></article>
+        <article class="research-card"><div class="research-visual visual-modal" aria-hidden="true"><svg viewBox="0 0 240 90"><rect x="35" y="19" width="60" height="52" rx="7"/><path d="m46 47 6-12 7 24 7-28 7 25 7-12h6m18 1h30"/><rect x="145" y="19" width="60" height="52" rx="7"/><path d="M157 33h35m-35 12h26m-26 12h32"/></svg></div><p class="card-kicker">REPRESENTATION & SEMANTICS</p><h3>语义与多模态表征</h3><p>结合声音属性与文本语义，探索可解释表征、提示学习及跨模态知识迁移。</p><div class="tags"><span>Semantic guidance</span><span>Prompt learning</span></div></article>
+      </div>
+      <div class="projects">
+        <h3>在研项目 <span>ONGOING PROJECTS</span></h3>
+        <article><span class="project-type">国家自然科学基金 · 青年项目</span><div><h4>基于增量式原型学习的开放环境声音事件检测方法研究</h4><p>项目编号 62506144 · 主持</p></div><span class="project-date">2026 — 2028</span></article>
+        <article><span class="project-type">江苏省自然科学基金 · 青年项目</span><div><h4>风格语义指导的开放环境声音事件检测方法研究</h4><p>项目编号 BK20250848 · 主持</p></div><span class="project-date">2026 — 2028</span></article>
+        <article><span class="project-type">镇江市科技计划 · 社会发展面上项目</span><div><h4>大模型语义指导的开放环境异常声音事件检测技术研究</h4><p>项目编号 SH2025108 · 主持</p></div><span class="project-date">2025.10 — 2028.09</span></article>
+      </div>
+    </section>
+    <section id="demos" class="demos-section section-shell section-divider">
+      <div class="section-heading"><div><p class="eyebrow">LISTEN & EXPLORE</p><h2>听见研究任务</h2></div><p class="section-intro">用一段声音，<br>直观理解检测与分离。</p></div>
+      <p class="demo-disclosure">合成音频 · 任务示意</p>
+      <div class="demo-grid">
+        <article class="demo-card">
+          <p class="card-kicker">SOUND EVENT DETECTION</p><h3>什么声音，在何时发生？</h3>
+          <p class="demo-description">播放混合音频，观察提示音与节奏声的出现区间。重叠的色块表示两个事件同时发生。</p>
+          <p class="audio-label">混合音频 · 6 秒</p>
+          <audio id="detection-audio" aria-label="声音事件检测：混合音频" controls preload="metadata" src="assets/demos/mixture.wav">你的浏览器不支持音频播放。</audio>
+          <div class="event-timeline" id="event-timeline" role="img" aria-label="预设事件标注：提示音在0.5至1.45秒、2.55至3.5秒、4.65至5.55秒；节奏声在1.05至2.2秒、3.05至4.2秒。">
+            <div class="timeline-axis"><span>时间 / 秒</span><div><span>0</span><span>2</span><span>4</span><span>6</span></div></div>
+            <div class="event-row"><span>提示音</span><div class="event-lane"><span class="event-block event-tone" data-start="0.5" data-end="1.45" style="--start:8.333%;--length:15.833%"></span><span class="event-block event-tone" data-start="2.55" data-end="3.5" style="--start:42.5%;--length:15.833%"></span><span class="event-block event-tone" data-start="4.65" data-end="5.55" style="--start:77.5%;--length:15%"></span></div></div>
+            <div class="event-row"><span>节奏声</span><div class="event-lane"><span class="event-block event-beat" data-start="1.05" data-end="2.2" style="--start:17.5%;--length:19.167%"></span><span class="event-block event-beat" data-start="3.05" data-end="4.2" style="--start:50.833%;--length:19.167%"></span></div></div>
+          </div>
+          <p class="demo-live" id="detection-status" role="status">点击播放，对照声音与时间标注。</p>
+        </article>
+        <article class="demo-card">
+          <p class="card-kicker">SOUND SEPARATION</p><h3>一段混音，两个独立声源。</h3>
+          <p class="demo-description">先听混合声音，再分别试听两条源音轨，理解“从混合信号中分离声音”的任务目标。</p>
+          <div class="separation-track"><div><span id="mixture-label" class="track-label">混合声音</span><span>提示音 + 节奏声</span></div><audio id="mixture-audio" aria-labelledby="mixture-label" controls preload="metadata" src="assets/demos/mixture.wav">你的浏览器不支持音频播放。</audio></div>
+          <div class="source-tracks"><div class="separation-track"><div><span id="tone-label" class="track-label"><i class="source-swatch tone-swatch" aria-hidden="true"></i>声源 A · 提示音</span><span>预设源音轨</span></div><audio id="tone-audio" aria-labelledby="tone-label" controls preload="metadata" src="assets/demos/tone.wav">你的浏览器不支持音频播放。</audio></div><div class="separation-track"><div><span id="beat-label" class="track-label"><i class="source-swatch beat-swatch" aria-hidden="true"></i>声源 B · 节奏声</span><span>预设源音轨</span></div><audio id="beat-audio" aria-labelledby="beat-label" controls preload="metadata" src="assets/demos/beat.wav">你的浏览器不支持音频播放。</audio></div></div>
+        </article>
+      </div>
+      <noscript><p class="demo-disclosure">音频可直接播放；启用 JavaScript 后可显示与播放进度同步的事件高亮。</p></noscript>
+    </section>
+    <section id="publications" class="publications-section section-shell section-divider">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED PUBLICATIONS</p><h2>代表论文</h2></div><p class="section-intro">围绕声音理解与表征学习的<br>部分研究工作。</p></div>
+      <div class="publication-toolbar"><div class="filters" role="group" aria-label="论文类别"><button class="filter active" data-filter="all" aria-pressed="true">全部</button><button class="filter" data-filter="audio" aria-pressed="false">声音理解</button><button class="filter" data-filter="multimodal" aria-pressed="false">多模态学习</button></div><span id="paper-count" aria-live="polite"></span></div>
+      <div id="paper-list"></div>
+      <noscript><p>启用 JavaScript 可浏览完整论文列表。代表作包括 On Local Temporal Embedding for Semi-Supervised Sound Event Detection（IEEE/ACM TASLP, 2024）和 Adaptive Hierarchical Pooling for Weakly-supervised Sound Event Detection（ACM MM, 2022）。</p></noscript>
+    </section>
+    <section id="experience" class="experience-section section-shell section-divider">
+      <div><p class="eyebrow">EXPERIENCE</p><h2>教育与工作</h2><div class="timeline"><article><p class="timeline-date">2024.10 — 至今</p><h3>江苏大学 <span>讲师</span></h3><p>计算机科学与通信工程学院</p></article><article><p class="timeline-date">2020.09 — 2024.06</p><h3>江苏大学 <span>博士</span></h3><p>计算机科学与技术</p></article><article><p class="timeline-date">2019.07 — 2020.07</p><h3>南京烽火星空通信发展有限公司</h3><p>语音算法工程师</p></article><article><p class="timeline-date">2016.09 — 2019.06</p><h3>江苏大学 <span>硕士</span></h3><p>计算机技术</p></article><article><p class="timeline-date">2012.09 — 2016.06</p><h3>江苏大学 <span>学士</span></h3><p>网络工程</p></article></div></div>
+      <div class="experience-aside"><p class="eyebrow">TEACHING & RECOGNITION</p><h2>教学与奖励</h2><div class="teaching-block"><h3>课程教学</h3><p>计算机组成原理</p><p>数字逻辑</p><span>将专业知识与工程实践结合，培养问题分析与系统设计能力。</span></div><div class="awards-block"><h3>科研奖励</h3><article><span class="award-year">2025</span><div><h4>江苏省科学技术奖 · 二等奖</h4><p>标注受限环境下音视频鲁棒语义信息抽取与事件检测技术及应用</p><small>参与完成人，排名 4/7</small></div></article><article><span class="award-year">2023</span><div><h4>江苏省科学技术奖 · 三等奖</h4><p>面向社会公共安全的复杂环境视觉语音人物行为分析关键技术及应用</p><small>参与完成人，排名 5/8</small></div></article></div></div>
+    </section>
+    <section id="contact" class="contact-section"><div class="section-shell contact-inner"><div><p class="eyebrow">LET’S CONNECT</p><h2>交流，从一个问题开始。</h2><p>欢迎围绕声音事件检测、声音分离与多模态学习开展学术交流。</p></div><a class="contact-email" href="mailto:ljgao@ujs.edu.cn">ljgao@ujs.edu.cn<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m2 6 10 7L22 6"/></svg></a></div></section>
+  </main>
+  <footer class="site-footer section-shell"><p>© <span id="copyright-year">2026</span> 高利剑 · Lijian Gao</p><p>江苏大学 · 计算机科学与通信工程学院</p><a href="#home">返回顶部</a></footer>
+</body>
+</html>
