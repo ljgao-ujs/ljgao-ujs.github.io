@@ -40,7 +40,7 @@
 
 论文条目采用原材料中的题名、年份、期刊/会议及作者身份；提供完整标题的 Google Scholar 检索入口。展开项“论文摘要”显示英文摘要，不再使用题名的简短中文概述。摘要核对依据为本地正式论文、camera-ready 文件及检索记录，PADO 使用本地 final_version 摘要；`abstractSource` 保留已核对的 DOI。
 
-“源代码”入口仅添加已经公开核对的仓库：Joint-Former、HiPool 和 SED_PyTorch，保留论文原有 mastergofujs 账号链接，不改写到新主页账号。LTE-Net 在原稿中给出的仓库地址当前返回 404，暂不添加链接；其余未核实到公开对应仓库的条目也不显示代码入口。
+“源代码”入口仅添加已经公开核对的仓库：Joint-Former、HiPool、SED_PyTorch 及 SED_MM，保留论文原有 mastergofujs 账号链接，不改写到新主页账号。2019 年 ACM Multimedia 原始研究与 2021 年复现论文分别保留为独立条目，原始研究对应 SED_MM，复现论文对应 SED_PyTorch。LTE-Net 在原稿中给出的仓库地址当前返回 404，暂不添加链接；其余未核实到公开对应仓库的条目也不显示代码入口。
 
 声波图为原创概念插画，不是实验数据。未放置不确定身份的照片。尚未配置个人 Scholar ID、ORCID 或简历下载，避免无效链接。
 

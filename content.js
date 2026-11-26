@@ -44,5 +44,13 @@ window.publications = [
     abstract: `This companion paper is provided to describe the major experiments reported in our paper "On Learning Disentangled Representation for Acoustic Event Detection" published in ACM Multimedia 2019. To make the replication of our work easier, we first give an introduction of the computing environment where all of our experiments are conducted. Furthermore, we provide an environmental configuration file to setup the compiling environment and other artifacts including the source code, datasets and the files generated during our experiments. Finally, we summarize the structure and usage of the source code. For more details, please consult the README file in the archive of artifacts on GitHub: https://github.com/mastergofujs/SED_PyTorch.`,
     abstractSource: 'https://doi.org/10.1145/3474085.3477938',
     codeUrl: 'https://github.com/mastergofujs/SED_PyTorch'
+  },
+  {
+    year: 2019, venue: 'ACM Multimedia', type: 'CONFERENCE', category: 'audio',
+    title: 'On Learning Disentangled Representation for Acoustic Event Detection',
+    role: '第一作者',
+    abstract: `Polyphonic Acoustic Event Detection (AED) is a challenging task as the sounds are mixed with the signals from different events, and the features extracted from the mixture do not match well with features calculated from sounds in isolation, leading to suboptimal AED performance. In this paper, we propose a supervised β-VAE model for AED, which adds a novel event-specific disentangling loss in the objective function of disentangled learning. By incorporating either latent factor blocks or latent attention in disentangling, supervised β-VAE learns a set of discriminative features for each event. Extensive experiments on benchmark datasets show that our approach outperforms the current state-of-the-arts (top-1 performers in the Detection and Classification of Acoustic Scenes and Events (DCASE) 2017 AED challenge). Supervised β-VAE has great success in challenging AED tasks with a large variety of events and imbalanced data.`,
+    abstractSource: 'https://doi.org/10.1145/3343031.3351086',
+    codeUrl: 'https://github.com/mastergofujs/SED_MM'
   }
 ];
