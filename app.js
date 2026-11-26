@@ -23,10 +23,12 @@ function renderPublications(filter = 'all') {
     role.textContent = `高利剑 · ${paper.role}`;
     const details = document.createElement('details');
     const summary = document.createElement('summary');
-    summary.textContent = '研究主题';
-    const note = document.createElement('p');
-    note.textContent = paper.note;
-    details.append(summary, note);
+    summary.textContent = '论文摘要';
+    const abstract = document.createElement('p');
+    abstract.className = 'paper-abstract';
+    abstract.lang = 'en';
+    abstract.textContent = paper.abstract;
+    details.append(summary, abstract);
     const search = document.createElement('a');
     search.className = 'paper-link';
     search.href = `https://scholar.google.com/scholar?q=${encodeURIComponent(paper.title)}`;
@@ -34,8 +36,21 @@ function renderPublications(filter = 'all') {
     search.target = '_blank';
     search.rel = 'noopener noreferrer';
     search.setAttribute('aria-label', `学术检索：${paper.title}`);
+    const actions = document.createElement('div');
+    actions.className = 'paper-actions';
+    actions.append(search);
+    if (paper.codeUrl) {
+      const code = document.createElement('a');
+      code.className = 'paper-link paper-code';
+      code.href = paper.codeUrl;
+      code.textContent = '源代码';
+      code.target = '_blank';
+      code.rel = 'noopener noreferrer';
+      code.setAttribute('aria-label', `源代码：${paper.title}`);
+      actions.append(code);
+    }
     body.append(meta, title, role, details);
-    article.append(year, body, search);
+    article.append(year, body, actions);
     return article;
   }));
   paperCount.textContent = `${papers.length} 篇论文`;
